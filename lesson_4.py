@@ -19,6 +19,9 @@ lab_text1 = Label(text="555444" , bg="#569dcb" , font=("",20))
 lab_text1.place(x=200,y=200)
 
 
+
+
+# ввод данных
 entry_input = Entry(font=("",18))
 entry_input.place(x=200,y=270)
 
@@ -27,6 +30,7 @@ entry_input.place(x=200,y=270)
 
 
 def fun_1():
+    # получаем текст Entry
     print(entry_input.get())
     lab_text1.config(text=entry_input.get())
     window.geometry(entry_input.get())
@@ -40,6 +44,7 @@ but1.place(x=100, y=400)
 
 
 def fun_1():
+    # очищаем Entry
     # entry_input.delete(0,4)
     entry_input.delete(0,END)
 

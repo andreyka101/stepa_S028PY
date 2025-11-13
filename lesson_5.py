@@ -21,6 +21,7 @@ lab_text1.place(x=200,y=200)
 
 
 def fun():
+    # получаем положение Checkbutton
     print(num_check.get())
     check_but_1.config(text=num_check.get())
     if(num_check.get()):
@@ -36,9 +37,10 @@ def fun2():
 
 
 
-
+# в num_check хранится положения Checkbutton
 num_check = IntVar()
 # num_check = BooleanVar()
+# Checkbutton это кнопка с двумя положениями
 check_but_1 = Checkbutton(variable=num_check , text= "check 1" , command= fun)
 check_but_1.place(x= 200 , y=300)
 

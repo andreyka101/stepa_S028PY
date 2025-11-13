@@ -7,9 +7,9 @@ window = Tk()
 # меняем название окна
 window.title("lesson 11")
 # меняем ширину и высоту окна 
-window.geometry("600x500")
 
 
+window.geometry("600x500+300+200")
 
 # создаём текст через Label
 # bg= цвет фона 
@@ -36,9 +36,10 @@ def fun_1():
 
     # # меняем ширину и высоту окна
     # window.geometry("500x300")
+    print(window.geometry())
 
     # с помощью метода configure или config можно изменить параметры объекта 
-    but1.config(bg="#53ff44",font=("Algerian" , 23))
+    but1.config(bg="#53ff44",font=("Algerian" , 23) , )
     lab_text2.configure(text="click button" ,font=("Algerian" , 23) , bg="#5bfaff")
 
 

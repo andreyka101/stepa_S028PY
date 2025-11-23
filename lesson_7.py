@@ -52,16 +52,20 @@ print(arr2)
 
 
 def my_sum_X(local_arr):
+    # список суммы чисел по X
     arr_sum = []
     # for x - перебираем списки 
     for x in range(len(local_arr)):
+        # создаем переменную суммы чисел строки по X
         num_sum = 0
         # for y - перебираем числа в списках 
         for y in range(len(local_arr[x])):
             # local_arr[индекс списка][индекс числа в списке]
+            # суммируем числа каждой строки отдельно
             num_sum += local_arr[x][y]
+        # добавляем в список сумму каждой строки
         arr_sum.append(num_sum)
-            
+    
     return arr_sum
 
 print(my_sum_X(arr2))
@@ -70,18 +74,20 @@ print(my_sum_X(arr2))
 
 
 def my_sum_Y(local_arr):
+    # список суммы чисел по Y
     arr_sum = []
     # for x - перебираем списки 
     for x in range(len(local_arr)):
+        # создаем переменную суммы чисел строки по Y
         num_sum = 0
         # for y - перебираем числа в списках 
         for y in range(len(local_arr[x])):
             # local_arr[индекс списка][индекс числа в списке]
+            # суммируем числа каждой строки отдельно
             num_sum += local_arr[y][x]
+        # добавляем в список сумму каждой строки
         arr_sum.append(num_sum)
 
-        
-            
     return arr_sum
 
 print(my_sum_Y(arr2))

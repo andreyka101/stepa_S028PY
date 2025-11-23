@@ -31,14 +31,19 @@ arr = [1,2,3]
 import random
 
 
+# создание двухмерного списка
 arr2 = []
 num = 0
 for x in range(3):
+    # через цикл в списой arr2 добовляем пустые списки
     arr2.append([])
     for y in range(3):
         num += 1
-        # arr2[x].append(random.randint(1,9))
+        # через цикл в цикле добовляем числа в пустые списки
         arr2[x].append(num)
+
+        # через цикл в цикле добовляем рандомные числа в пустые списки
+        # arr2[x].append(random.randint(1,9))
 print(arr2)
 # print(arr2[0])
 # print(arr2[0][5])
@@ -48,9 +53,12 @@ print(arr2)
 
 def my_sum_X(local_arr):
     arr_sum = []
+    # for x - перебираем списки 
     for x in range(len(local_arr)):
         num_sum = 0
+        # for y - перебираем числа в списках 
         for y in range(len(local_arr[x])):
+            # local_arr[индекс списка][индекс числа в списке]
             num_sum += local_arr[x][y]
         arr_sum.append(num_sum)
             
@@ -63,9 +71,12 @@ print(my_sum_X(arr2))
 
 def my_sum_Y(local_arr):
     arr_sum = []
+    # for x - перебираем списки 
     for x in range(len(local_arr)):
         num_sum = 0
+        # for y - перебираем числа в списках 
         for y in range(len(local_arr[x])):
+            # local_arr[индекс списка][индекс числа в списке]
             num_sum += local_arr[y][x]
         arr_sum.append(num_sum)
 
